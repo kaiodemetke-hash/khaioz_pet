@@ -32,17 +32,17 @@ opacity: 0.8;
     width: 130px;
     height:38px ;
     border-radius: 20px;
-    background-color: rgb(197, 135, 255);
+    background-color: rgb(47, 0, 85);
     border:none;
     font-size: 20px;
     font-weight: 600;
-    color:rgb(7, 255, 255);
+    color:rgb(136, 255, 0);
     transition:opacity 0.2s;
 }
 
 .botao-login:hover{
     opacity: 0.8;
-    background-color: rgb(80, 6, 6);
+    background-color: rgb(90, 47, 47);
 }
 
 .logo{
@@ -56,8 +56,8 @@ opacity: 0.8;
 .texto{
     width: 40%;
     display:inline-block;
-    vertical-align: top;
-    margin: 250px 0 0 5%;
+    vertical-align: middle;
+    margin: 0 0 0 5%;
     text-align: left;
 }
 main{
@@ -73,7 +73,8 @@ main{
     font-size: 20px;
     font-weight: 500;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s
+    transition: opacity 0.3s;
+    text-decoration: none;
 }
 
 .botao-explore:houver {
@@ -83,10 +84,10 @@ opacity: 0,7;
 .titulo{
     font-size: 40px;
     font-weight: 900;;
-    color:rgb(141, 7, 7)
+    color:rgb(24, 170, 36)
 }
 .sub-titulo{
-    color:rgb(177, 104, 8);
+    color:rgb(28, 72, 194);
     line-height: 60px;
     font-size: 30px;
 }
@@ -94,7 +95,7 @@ opacity: 0,7;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color:black;
+    color:rgb(138, 58, 58);
     text-align: justify;
     margin: 20px 0 30px 0;
     max-width: 500px;
@@ -115,7 +116,33 @@ footer{
     margin: 80px auto 0 auto;
     border-radius: 15px;
 }
+.servicos{
+    padding: 10px 0 100px 0;
 
+}
+.h2-servicos{
+font-weight: 500;
+}
+.lista-servicos{
+    width: 200px;
+    /* inline <a> <span> <img>*/
+    /* <p> <h1> <div> block*/
+    display:block;
+    text-decoration: none;
+    color:#515151;
+    border: 2px solid;
+    margin: 0 50px;
+    padding: 20px 0;
+    border-radius: 15px;
+    transition:box-shadow 0.2s, transform 0.2s ;
+}
+.lista-servicos:hover{
+    box-shadow: 0 2px 5px rgba(5, 30, 247, 0.719);
+    transform: translateY(-2px);
+}
+.img-card{
+    width: 70%;
+}
 @media (max-width: 768px){
     header{
     margin:30px 0px 60px 0;
@@ -158,5 +185,19 @@ a{
 .img-dog{
     max-height: 250px;
 }
+.h2-servicos{
+font-weight: 400;
+font-size: 22px;
+}
 
 }
+.lista-servicos{
+    width: 200px;  
+    margin: 17px 10px;
+    padding: 16px 0;
+  
+}
+
+
+
+
