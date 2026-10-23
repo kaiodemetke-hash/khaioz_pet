@@ -12,7 +12,25 @@ nav{
     display:inline-block;
 }
 header{
-    margin:30px 0px 144px 70px;
+    margin:0px 0px 144px 0px;
+    background-color: #f8f9fa;
+    padding: 30px 0 20px 0;
+    border-bottom: 2px solid #f0f0f0;
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nome{
+    font-size: 30px;
+    font-weight: 500;
+}
+.n1{
+color:#e0751c
+}
+.n2{
+color: rgba(0, 0, 0, 0.723);
 }
 a{
     font-weight: 600;
@@ -20,7 +38,7 @@ a{
     line-height: 28px;
     margin: 0 20px 0 0 ;
     cursor:pointer;
-    color:rgb(1, 0, 3);
+    color:rgb(7, 6, 8);
     transition:opacity 0.2s;
     text-decoration: none
 }
@@ -32,17 +50,17 @@ opacity: 0.8;
     width: 130px;
     height:38px ;
     border-radius: 20px;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(36, 31, 41);
     border:none;
     font-size: 20px;
     font-weight: 600;
-    color:rgb(4, 199, 248);
+    color:rgb(244, 247, 241);
     transition:opacity 0.2s;
 }
 
 .botao-login:hover{
     opacity: 0.8;
-    background-color: rgb(90, 47, 47);
+    background-color: rgb(136, 21, 21);
 }
 
 .logo{
@@ -65,15 +83,15 @@ main{
 }
 .botao-explore{
     width: 180px;
-    height: 44px;
+    height: 60px;
     cursor: pointer;
-    background: rgb(2, 185, 231);
+    background: rgb(235, 163, 8);
     border:none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    box-shadow: 0 4px 5px rgba(138, 57, 57, 0.2);
+    transition: opacity 0.4s;
     text-decoration: none;
 }
 
@@ -84,10 +102,10 @@ opacity: 0,7;
 .titulo{
     font-size: 40px;
     font-weight: 900;;
-    color:rgb(0, 0, 0)
+    color:rgb(219, 145, 8)
 }
 .sub-titulo{
-    color:rgb(2, 187, 243);
+    color:rgb(85, 45, 45);
     line-height: 60px;
     font-size: 30px;
 }
@@ -95,7 +113,7 @@ opacity: 0,7;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color:rgb(8, 6, 6);
+    color:rgb(19, 16, 16);
     text-align: justify;
     margin: 20px 0 30px 0;
     max-width: 500px;
@@ -103,10 +121,12 @@ opacity: 0,7;
 }
 footer{
     text-align: center;
-    background-color: beige;
-    padding: 50px;
+    background-color: #e7e4ec;
+    padding: 80px 0 80px 0;
     font-size: 14px;
     margin-top: 100px;
+    color: f0f0f0;
+
 }
 .img-dog{
     display: block;
@@ -129,7 +149,7 @@ font-weight: 500;
     /* <p> <h1> <div> block*/
     display:block;
     text-decoration: none;
-    color:#515151;
+    color:#e00b0b;
     border: 2px solid;
     margin: 0 50px;
     padding: 20px 0;
@@ -137,19 +157,42 @@ font-weight: 500;
     transition:box-shadow 0.2s, transform 0.2s ;
 }
 .lista-servicos:hover{
-    box-shadow: 0 2px 5px rgba(72, 81, 155, 0.719);
+    box-shadow: 0 2px 5px rgba(22, 43, 233, 0.719);
     transform: translateY(-2px);
 }
 .img-card{
     width: 70%;
+
 }
+
+.agenda{
+    width: 220px;
+    height:38px ;
+    border-radius: 10px;
+    background-color: rgb(124, 71, 71);
+    border:none;
+    font-size: 18px;
+    cursor:pointer;
+    color:rgb(226, 115, 23);
+    transition:scale 0.3s;
+}
+
+.botao-login:hover{
+    opacity: 0.8;
+    scale: 1.02;
+
+}
+
+
 @media (max-width: 768px){
     header{
     margin:30px 0px 60px 0;
     text-align: center;
     width: 100%;
 }
-
+.nome{
+    display:none;
+}
 a{
     font-weight: 500;
     font-size: 16px;
@@ -170,8 +213,11 @@ a{
 
 .logo{
     width: 40%;
-    display: block;
-    margin: 0 auto 50px auto;
+    max-width: 430px;
+    display: inline block;
+    margin: 0 5%;
+    border-radius: 15px;
+
 }
 
 .texto{

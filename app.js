@@ -9,3 +9,14 @@ async function imagemApi(){
     console.log(respostaApi);
 }
 imagemApi()
+
+
+
+function Whatsapp(){
+
+const texto ="Olá! Vim pelo site da NomeAPP e gostaria de agendar um horário para o meu pet."
+const textoFormatado =encodeURIComponent(texto)
+const url =  "https://wa.me/5544999689642?text=I" + textoFormatado;
+open(url,'_blank');
+console.log(url);
+}
